@@ -1,13 +1,86 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <meta charset="utf-8" />
+    <title>Naruverse.</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header>
+      <h1>🌀 NARUVERSE 🌀</h1>
+    </header>
 
-  <h1> hola mundo prueba.</h1>
+    <main>
+      <section class="filters">
+        <div>
+          <label for="village">Search for:</label>
+          <select id="village" name="village" data-testid="select-filter">
+            <option selected>Ninja Villages</option>
+            <option value="Konohagakure no sato">Konohagakure no Sato</option>
+            <option value="Sunagakure no sato">Sunagakure no Sato</option>
+            <option value="Kirigakure no sato">Kirigakure no Sato</option>
+            <option value="Unknown">Unknown</option>
+          </select>
+        </div>
+        <div>
+          <label for="clan">Search for:</label>
+          <select id="clan" name="clan" data-testid="select-filter">
+            <option selected>Clan</option>
+            <option value="Uzumaki">Uzumaki</option>
+            <option value="Uchiha">Uchiha</option>
+            <option value="Senju">Senju</option>
+            <option value="Hyuga">Hyuga</option>
+            <option value="Namikaze">Namikaze</option>
+            <option value="Hatake">Hatake</option>
+            <option value="Nara">Nara</option>
+            <option value="Yamanaka">Yamanaka</option>
+            <option value="Akimichi">Akimichi</option>
+            <option value="Akasuna">Akasuna</option>
+            <option value="Inuzuka">Inuzuka</option>
+            <option value="Aburame">Aburame</option>
+            <option value="Hoshigaki">Hoshigaki</option>
+            <option value="Sarutobi">Sarutobi</option>
+            <option value="Unknown">Unknown</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="skills">Search for:</label>
+          <select id="skills" name="skills" data-testid="select-filter">
+            <option selected>Skills</option>
+            <option value="Chakra Control">Chakra Control</option>
+            <option value="Medical Ninjutsu">Medical Ninjutsu</option>
+            <option value="Sharingan user">Sharingan user</option>
+            <option value="Byakugan user">Byakugan user</option>
+            <option value="Shadow Manipulation">Shadow Manipulation</option>
+            <option value="Mind Techniques">Mind Techniques</option>
+            <option value="Expansion Jutsu">Expansion Jutsu</option>
+            <option value="Taijutsu">Taijutsu</option>
+            <option value="Sand Control">Sand Control</option>
+            <option value="Genjutsu">Genjutsu</option>
+            <option value="Ninjutsu">Ninjutsu</option>
+            <option value="Body Manipulation">Body Manipulation</option>
+            <option value="Rasengan">Rasengan</option>
+            <option value="Sealing Techniques">Sealing Techniques</option>
+            <option value="Beast Transformation">Beast Transformation</option>
+            <option value="Unknown">Unknown</option>
+          </select>
+        </div>
+
+        <button data-testid="button-clear"> Clear</button> 
+      </section>
+        
+
+      <div id="characters-container" class="characters-container"></div>
+    </main>
+
+    <footer>
+      <p>
+        <b><i>By Lía Carrizo 風.</i></b>
+      </p>
+    </footer>
+
     <script src="main.js" type="module"></script>
+    <script src="View.js" type="module"></script>
   </body>
 </html>
